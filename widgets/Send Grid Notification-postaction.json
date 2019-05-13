@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "spec-version": "1.0"
+  },
+  "configuration-groups": [
+    {
+      "label": "Email Properties",
+      "properties": [
+        {
+          "widget-type": "select",
+          "label": "Run Condition",
+          "name": "runCondition",
+          "widget-attributes": {
+            "values": [
+              "completion",
+              "success",
+              "failure"
+            ],
+            "default": "completion"
+          }
+        },
+        {
+          "widget-type": "API key",
+          "label": "API Key",
+          "name": "API key",
+          "widget-attributes": {
+            "placeholder": "This is a placeholder for API key."
+          }
+        },
+        {
+          "widget-type": "From Email ID",
+          "label": "Email id",
+          "name": "fromEmail",
+          "widget-attributes": {
+            "placeholder": "This is a placeholder for name."
+          }
+        },
+        {
+          "widget-type": "To Email ID",
+          "label": "Email id",
+          "name": "toEmail",
+          "widget-attributes": {
+            "placeholder": "This is a placeholder for name."
+          }
+        },
+        {
+          "widget-type": "Subject",
+          "label": "subject",
+          "name": "subject",
+          "widget-attributes": {
+            "placeholder": "This is a placeholder for subject."
+          }
+        }
+      ]
+    }
+  ],
+  "outputs": []
+}
