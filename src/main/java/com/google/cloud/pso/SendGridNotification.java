@@ -1,4 +1,4 @@
-package org.example;
+package com.google.cloud.pso;
 
 import com.sendgrid.*;
 import io.cdap.cdap.api.annotation.Description;
@@ -101,8 +101,7 @@ public final class SendGridNotification extends PostAction {
         Email to = new Email(config.toEmail);
         Content content = new Content("text/plain", body);
         Mail mail = new Mail(from, subject, to, content);
-        LOG.info("Sending email notification. From: " + config.fromEmail + ". To: " + config.toEmail +
-                ". Key: " + config.apiKey);
+        LOG.info("Sending email notification. From: " + config.fromEmail + ". To: " + config.toEmail);
 
         SendGrid sg = new SendGrid(config.apiKey);
         Request request = new Request();

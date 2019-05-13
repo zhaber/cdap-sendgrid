@@ -4,21 +4,11 @@
 [![Join CDAP community](https://cdap-users.herokuapp.com/badge.svg?t=wrangler)](https://cdap-users.herokuapp.com?t=1)
 
 
-This is a an example repository for building notification using PostAction plugin type.
-These type of plugins are executed currently only within batch pipelines. They are
-executed at the end of the pipeline execution irrespective of the status of the
-pipeline.
-
-Failure in execution of these type of plugins don't fail the pipeline. Use this plugin 
-type to send notifications to external system or notify other workflows. 
+This is a repository with SendGrid Notification post action.
 
 # Get Started
 
 Clone this repository
-
-```
-  git clone https://github.com/hydrator/example-notification.git
-```
 
 ## Build
 ```
@@ -35,7 +25,6 @@ The *cdap-user* mailing list is primarily for users using the product to develop
 applications or building plugins for appplications. You can expect questions from 
 users, release announcements, and any other discussions that we think will be helpful 
 to the users.
-
 
 # License and Trademarks
 
