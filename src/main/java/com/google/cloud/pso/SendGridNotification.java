@@ -101,14 +101,14 @@ public final class SendGridNotification extends PostAction {
         Email to = new Email(config.toEmail);
         Content content = new Content("text/plain", body);
         Mail mail = new Mail();
-        Personalization p1 = new Personalization();
+        Personalization personalization = new Personalization();
         for(String toEmail : config.toEmail.split(";")){
-            p1.addTo(new Email(toEmail));
+            personalization.addTo(new Email(toEmail));
         }
         mail.setFrom(from);
         mail.setSubject(subject);
         mail.addContent(content);
-        mail.addPersonalization(p1);
+        mail.addPersonalization(personalization);
         LOG.info("Sending email notification. From: " + config.fromEmail + ". To: " + config.toEmail);
 
         SendGrid sg = new SendGrid(config.apiKey);
